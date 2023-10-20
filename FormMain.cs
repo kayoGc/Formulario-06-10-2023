@@ -29,10 +29,7 @@ namespace Formulario
 
         private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if(MessageBox.Show("Deseja realmente sair?","Confirmação", 
-                MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No) {
-                this.Close();            
-            }
+            
         }
 
         private void FormMain_Load(object sender, EventArgs e)
@@ -46,7 +43,6 @@ namespace Formulario
             {
                 var Form = new Form1();
                 Form.Show();
-                this.Close();
             }
         }
     }
